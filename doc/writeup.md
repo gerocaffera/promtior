@@ -54,10 +54,12 @@ Although the prompt referenced Python examples, this solution was implemented in
 
 ## Deployment
 
-The solution is deployed on Railway for simplicity and rapid setup. Although the instructions suggest using AWS or Azure, Railway provides a fully functional cloud environment for Node.js applications and supports all the required functionality for this RAG chatbot. 
+The solution is deployed on [Railway](https://railway.app) for simplicity and rapid setup. Although the instructions suggest using AWS or Azure, Railway provides a fully functional cloud environment for Node.js applications and supports all required functionality for this RAG chatbot.
 
-- Public endpoint: `POST /invoke`
-- Environment variables (e.g. `OPENAI_API_KEY`) are configured via Railway settings
+- Public endpoint: `https://promtior-production.up.railway.app/invoke`
+- Method: `POST`
+- Request body: `{ "input": "<your question>" }`
+- Environment variable: `OPENAI_API_KEY` and `PORT` is configured via Railway settings
 
 ## Questions Successfully Answered
 
@@ -70,4 +72,4 @@ The solution is deployed on Railway for simplicity and rapid setup. Although the
 
 ## Diagram
 
-See `diagram.png` for a visual representation of the system flow and components.
+See `diagram.png` for a visual representation of the system flow.
